@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AICTE IDEALAB-SGSITS</title>
+    <link rel="shortcut icon" href="favicon (1).ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Merriweather&family=Montserrat:wght@500&family=Playfair+Display&family=Russo+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <style>
+        .container {
+            width: 40%;
+            text-align: center;
+            padding: 35px;
+        }
+
+        h1 {
+            font-family: 'Archivo Black', sans-serif;
+            font-size: 72px;
+            color: rgb(12, 0, 78);
+        }
+
+        h2 {
+            margin-top: 20px;
+            margin-bottom: 50px;
+            color: rgb(12, 0, 78);
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bolder;
+        }
+
+        h3 {
+            margin-top: 20px;
+            margin-bottom: 50px;
+            color: rgb(12, 0, 78);
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bolder;
+        }
+
+        h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+        }
+
+        header {
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+
+        .carousel-inner {
+            width: 50%;
+            text-align: center;
+            margin: auto;
+        }
+
+        .carousel-indicators {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            z-index: 1;
+        }
+
+        .carousel-item img {
+            max-width: 50%;
+            margin: auto;
+        }
+
+        .carousel slide {
+            margin-bottom: 100px;
+        }
+
+        #carouselExampleFade {
+            margin-top: 100px;
+        }
+
+        .carousel-control-prev {
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            border-radius: 50%;
+            position: relative;
+            left: 750px;
+            width: 40px;
+            height: 40px;
+            top: -100px;
+        }
+
+        .carousel-control-next {
+            border-radius: 50%;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            position: relative;
+            top: -150px;
+            width: 40px;
+            height: 40px;
+            left: 1050px;
+        }
+
+        #carouselExampleIndicators {
+            margin-bottom: 150px;
+        }
+
+        mySlides {
+            display: none;
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            margin-top: 300px !important;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <img class="clglogo" src="otto-removebg-preview.png" alt="collegelogo">
+            <img class="clglogo" src="download_20-removebg-preview.png" alt="collegelogo">
+            <img class="clglogo2" src="HD-AICTE-removebg-preview.png" alt="IDEA LAB LOGO">
+            <div class="text">
+                <h4>SHRI G. S. INSTITUTE OF<br> TECHNOLOGY AND <br>SCIENCE, INDORE</h4>
+            </div>
+            <div class="heading">
+                <div class="menu-item"><a href="#home" style="margin-left: 100px;">Home</a></div>
+                <div class="menu-item"><a href="#OurMentor">Our Mentors</a></div>
+                <div class="dropdown">
+                    <button class="dropbtn">Our Team</button>
+                    <div class="dropdown-content">
+                        <a href="#carouselExampleFade">Student Ambassadors</a>
+                        <a href="#OurTeam">Student Body</a>
+                    </div>
+                </div>
+                <div class="menu-item"><a href="#OurEquipment">Our Equipment</a></div>
+                <div class="dropdown">
+                    <button class="dropbtn">Projects</button>
+                    <div class="dropdown-content">
+                        <a href="#CompletedProjects">Completed Projects</a>
+                        <a href="#OngoingProjects">Ongoing Projects</a>
+                    </div>
+                </div>
+                <div class="menu-item" style="margin-left: 10px;"><a href="#contactus"> Contact Us</a></div>
+            </div>
+        </div>
+    </header>
+
+
+    <section>
+        <div id="home" class="idea">
+            <img class="aicte" src="O-removebg-preview.png" alt="" style="position: centre; height: 75%;">
+        </div>
+    </section>
+    <a id="aboutus"></a>
+    <section>
+        <div class="tag About">
+            <h2>What is AICTE IDEA Lab ?</h2>
+            <p>
+                AICTE has launched a scheme for establishing AICTE-IDEA (Idea Development, Evaluation &
+                Application) Lab in its approved institutions for encouraging students for application of Science,
+                Technologies, Engineering and Mathematics (STEM)
+                fundamentals towards enhanced hands-on experience and learning by doing. <br>As a common facility
+                embedded in
+                the institution, IDEA Lab
+                facilitates the students to “engage, explore, experience, express and excel” as desired by the Hon’ble
+                Prime
+                Minister in the wake of release of
+                National Education Policy 2020. These Labs are mandated to function 24 x 7 in the institutions selected
+                and
+                be available to the colleges,
+                schools and industries around also.<br><br>
+                We can summarize it in following points:
+
+                <li>The purpose of IDEA Lab is to provide all facilities under one roof, for conversion of an idea into
+                    a
+                    prototype.</li>
+                <li>It is like a special place where students, just like you, come together to think, create, and turn
+                    their ideas into something real.</li>
+                <li>If someone is curious and love to come up with new ideas or solve problems, an Idea Lab is a
+                    fantastic place
+                    for you. It's a space where you can explore, learn, and make a real impact on the world with your
+                    creativity.</li>
+                </ol>
+            </p>
+        </div>
+    </section>
+
+    <a id="OurMentor">
+        <section>
+            <div class="w3-container">
+                <h2 style="text-align: center; font-size: 44px;">Our Mentors</h2>
+                <div class="w3-content w3-section" style="max-width:500px">
+                    <div class="mySlides w3-animate-top">
+                        <img src="rk_sexena-resize.jpg" style="width:100%">
+                        <p style="font-size: 20px; color: rgb(23, 0, 154); text-align: center;"><b>
+                                Dr.Rakesh Saxena<br>Chief Mentor<br>Director, SGSITS, Indore
+                            </b></p>
+                    </div>
+                    <div class="mySlides w3-animate-bottom">
+                        <img src="Krishnatant Dhakad.jpeg" style="width:100%">
+                        <p style="font-size: 20px; color: rgb(23, 0, 154); text-align: center;"><b>
+                                Dr.Krishnakant Dhakad<br>Coordinator <br>Assistant Professor, IPED
+                            </b></p>
+                    </div>
+                    <div class="mySlides w3-animate-top">
+                        <img src="Priyaka Bamne.jpg" style="width:100%">
+                        <p style="font-size: 20px; color: rgb(23, 0, 154); text-align: center;"><b>
+                                Ms.Priyanka Bamne<br>Co-Coordinator <br>Assistant Professor, CSE Department
+                            </b></p>
+                    </div>
+                </div>
+                <script>
+                    var myIndex = 0;
+                    carousel();
+
+                    function carousel() {
+                        var i;
+                        var x = document.getElementsByClassName("mySlides");
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";
+                        }
+                        myIndex++;
+                        if (myIndex > x.length) {
+                            myIndex = 1;
+                        }
+                        x[myIndex - 1].style.display = "block";
+                        setTimeout(carousel, 2500);
+                    }
+                </script>
+        </section>
+    </a>
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="1500">
+        <h3 style="text-align: center; font-size: 44px;">AICTE IDEA LAB Student Ambassadors</h3>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Avneesh Vijay.jpg" class="d-block w-100" alt="Image 1">
+                <p class="caption">Mr. Avneesh Vijay</p>
+            </div>
+            <div class="carousel-item">
+                <img src="Vanshika Jindal.jpg" class="d-block w-100" alt="Image 2">
+                <p class="caption">Ms. Vanshika Jindal</p>
+            </div>
+            <div class="carousel-item">
+                <img src="Vedant .jpg" class="d-block w-100" alt="Image 3">
+                <p class="caption">Mr. Vedant Mishra</p>
+            </div>
+        </div>
+    </div>
+    <a id="OurTeam">
+        <section>
+
+            <div class="container-block container" style="display: inline-block; justify-content: center; text-align: centre; margin-left: 60vh;">
+                <p class="text-blk team-head-text">
+                  Final Year Team
+                </p>
+                <div class="responsive-container-block teamcard-container">
+                  <div class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container">
+                    <div class="team-card">
+                      <div class="team-img-wrapper">
+                        <img class="team-img" src="Akash.jpg">
+                      </div>
+                      <div class="team-card-content">
+                        <p class="text-blk name">
+                            Mr.Akash Kumar Mishra
+                        </p>
+                        <p class="text-blk position">
+                           Final Year Student
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container">
+                    <div class="team-card">
+                      <div class="team-img-wrapper">
+                        <img class="team-img" src="Anshuman Idealab.jpg">
+                      </div>
+                      <div class="team-card-content">
+                        <p class="text-blk name">
+                            Mr.Anshuman Singh
+                        </p>
+                        <p class="text-blk position">
+                          Final Year Student
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container">
+                    <div class="team-card">
+                      <div class="team-img-wrapper">
+                        <img class="team-img" src="Gaurav Gupta .jpg">
+                      </div>
+                      <div class="team-card-content">
+                        <p class="text-blk name">
+                          Mr.Gaurav Gupta
+                        </p>
+                        <p class="text-blk position">
+                          Final Year Student
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container">
+                    <div class="team-card">
+                      <div class="team-img-wrapper">
+                        <img class="team-img" src="Kamaljeet Sahu .jpg">
+                      </div>
+                      <div class="team-card-content">
+                        <p class="text-blk name">
+                          Mr. Kamaljeet Sahu
+                        </p>
+                        <p class="text-blk position">
+                          Final Year Student
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container">
+                    <div class="team-card">
+                      <div class="team-img-wrapper">
+                        <img class="team-img" src="Meenakshi Patel .jpg">
+                      </div>
+                      <div class="team-card-content">
+                        <p class="text-blk name">
+                          Ms. Meenakshi Patel
+                        </p>
+                        <p class="text-blk position">
+                          Final Year Student
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container">
+                    <div class="team-card">
+                      <div class="team-img-wrapper">
+                        <img class="team-img" src="Pragati Gupta  (1).jpg">
+                      </div>
+                      <div class="team-card-content">
+                        <p class="text-blk name">
+                          Ms. Pragati Gupta
+                        </p>
+                        <p class="text-blk position">
+                          Final Year Student
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container">
+                    <div class="team-card">
+                      <div class="team-img-wrapper">
+                        <img class="team-img" src="Pritesh_ Dhanware.jpeg">
+                      </div>
+                      <div class="team-card-content">
+                        <p class="text-blk name">
+                          Mr. Pritesh Dhaware
+                        </p>
+                        <p class="text-blk position">
+                          Final Year Student
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container">
+                    <div class="team-card">
+                      <div class="team-img-wrapper">
+                        <img class="team-img" src="Rhushikesh Deshpande .JPG">
+                      </div>
+                      <div class="team-card-content">
+                        <p class="text-blk name">
+                          Mr. Rushikesh Pandey
+                        </p>
+                        <p class="text-blk position">
+                          Final Year Student
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container">
+                    <div class="team-card">
+                      <div class="team-img-wrapper">
+                        <img class="team-img" src="satyam_singh (1).jpg">
+                      </div>
+                      <div class="team-card-content">
+                        <p class="text-blk name">
+                          Mr. Satyam Singh
+                        </p>
+                        <p class="text-blk position">
+                          Final Year Student
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            <div class="tag team" style="border-radius: 50px;">
+                <h3>Our Team</h3>
+                <p>
+                <h4 style="font-style: italic;">III<sup>rd</sup> Year Students</h4>
+                <ul>
+                    <li>Mr.Aradhya Sharma</li>
+                    <li>Mr.Ashutosh Kushwaha</li>
+                    <li>Mr.Basu Jain</li>
+                    <li>Mr.Hemank Rakesh</li>
+                    <li>Ms.Jaya Singh Chauhan</li>
+                    <li>Mr.Jayesh Kumar Sharma</li>
+                    <li>Ms.Mihika Pathak</li>
+                    <li>Mr.Shriyansh Jar</li>
+                    <li>Mr.Ujjwal Kalbhore</li>
+                </ul>
+                <br>
+                <h4 style="font-style: italic;">II<sup>nd</sup> Year Students</h4>
+                <ul>
+                    <li>Mr.Aayush Gupta</li>
+                    <li>Mr.Abhijeet Solanki</li>
+                    <li>Mr.Adamya Jaiswal</li>
+                    <li>Mr.Adarsh Agrawal</li>
+                    <li>Mr.Aditya Shukla</li>
+                    <li>Mr.Ajeet Sahani</li>
+                    <li>Mr.Amber Gupta</li>
+                    <li>Mr.Anany Sharma</li>
+                    <li>Mr.Arihant Rathore</li>
+                    <li>Mr.Chitransh Guha</li>
+                    <li>Mr.Devansh Ramdurgekar</li>
+                    <li>Mr.Gaurav More</li>
+                    <li>Mr.Mradul Patoriya</li>
+                    <li>Mr.Ronak Chopde</li>
+                    <li>Mr.Shivam Bansal</li>
+                    <li>Ms.Neetu Vishwakarma</li>
+                    <li>Ms.Shrutee Mishra</li>
+                    <li>Ms.Tanusha Choudhary</li>
+                    <li>Ms.Zeenat Khan</li>
+                </ul>
+                </p>
+            </div>
+        </section>
+    </a>
+    <a id="OurEquipment"></a>
+    <section>
+        <h2 style="text-align: center; font-size: 44px">Our Equipments</h2>
+        <div class="image-slideshow" style="text-align: center">
+            <div class="slideshow-container" style="text-align: center;">
+                <img src="3d printer.jpg" alt="3D Printer">
+                <img src="cnc engraver.jpg" alt="CNC Engraver">
+                <img src="co2 laser.jpg" alt="CO2 Laser">
+                <img src="PCB.jpg" alt="PCB">
+                <img src="Snapmaker.jpg" alt="Snap">
+                <img src="Vinyl Cutter1.jpg" alt="Image 1">
+                <img src="3D Scanner.jpg" alt="Image 1">
+            </div>
+            <button class="prev" onclick="prevImage()">&#10094;</button>
+            <button class="next" onclick="nextImage()">&#10095;</button>
+        </div>
+    </section>
+    <script>
+        let currentImage = 0;
+        const images = document.querySelectorAll(".image-slideshow .slideshow-container img");
+
+        function showImage(n) {
+            images[currentImage].style.display = "none";
+            currentImage = (n + images.length) % images.length;
+            images[currentImage].style.display = "block";
+        }
+
+        function nextImage() {
+            showImage(currentImage + 1);
+        }
+
+        function prevImage() {
+            showImage(currentImage - 1);
+        }
+
+        function autoPlay() {
+            nextImage();
+        }
+
+        let slideInterval = setInterval(autoPlay, 3000);
+
+        // Stop the automatic slideshow when the user interacts with the images
+        images.forEach(image => {
+            image.addEventListener("mouseover", () => {
+                clearInterval(slideInterval);
+            });
+            image.addEventListener("mouseout", () => {
+                slideInterval = setInterval(autoPlay, 2000);
+            });
+        });
+    </script>
+
+
+    <a id="Facilities">
+        <section>
+            <div class="tag faci" style="border-radius: 50px;">
+                <h3>Facilities At Our IdeaLab</h3>
+                <p>Workspace
+                    <br>Prototyping services like 3D Printing, Laser Cutting, PCB making ,CNC cutting and engraving etc
+                    <br>Computer and Software
+                    <br>Expert Guidance
+                    <br>Access to Funding and Resources
+                </p>
+            </div>
+        </section>
+    </a>
+    <a id="CompletedProjects">
+        <section>
+            <div class="tag comp" style="border-radius: 50px;">
+                <h3>Completed-Projects</h3>
+                <p>Solar operated pesticide sprayer
+                    <br>Lab trainer kits for Biomedical Engineering Department
+                    <br>Autonomous drone for remote deliveries
+                    <br>Surgical robotic arm
+                    <br>Automatic Seed Sowing Machine
+                    <br>Gesture-Controlled Wheelchair
+                    <br>Automatic ON/OFF Switch
+                    <br>Agricultural Monitoring System
+                    <br>Quantisile Injector Prototype
+                    <br>Automatic Oiling For Ayurvedic Treatement
+                </p>
+            </div>
+        </section>
+    </a>
+    <a id="OngoingProjects">
+        <section>
+            <div class="tag ongp" style="border-radius: 50px;">
+                <h3>Ongoing-Projects</h3>
+                <p>Pellet durability calculator<br>
+                    CNC Machine for hardening of metal parts<br>
+                    Contactless smart water dispenser<br>
+                    QR Code based Vending Machines<br>
+                    Website for Army Inventory<br>
+                    AC-Motor timer based R.B.M. Controller<br>
+                </p>
+            </div>
+        </section>
+    </a>
+    <a id="contactus">
+        <section>
+            <div class="footer">
+                <h2 class="ti">Contact Us</h2>
+                <a href="https://in.linkedin.com/company/idea-lab-sgsits"><img class="lin" src="linkedin.png"
+                        alt="linkedin"></a>
+                <a href="https://www.instagram.com/idealab_sgsits/"><img class="ins" src="instagram.png"
+                        alt="instagram"></a>
+                <p>© 2023 IDEA Lab SGSITS</p>
+            </div>
+        </section>
+    </a>
+</body>
+</html>
